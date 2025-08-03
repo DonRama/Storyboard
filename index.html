@@ -1,57 +1,49 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <tittle>Storyboard proyecto</tittle>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Storyboard Proyecto</title>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+  <h1>Storyboard</h1>
+  <p>Propuesta literaria - Vista previa</p>
 
-    <header>
-        <h1>Storyboard</h1>
-        <p>Propuesta literaria - Vista previa</p>
-    </header>
-
-<main id="container">
-    <!-- Cada burbuja es un capitulo-->
-     <div class="bubble" data-id="1">
-        <img src="cap1.jpg" alt="Capitulo 1">
-        <h4>Capitulo 1</h4>
-     </div>
-
-     <div class="bubble" data-id="2">
-        <img src="cap2.jpg" alt="Capitulo 2">
-        <h4>Capitulo 2</h4>
-     </div>
-
-     <div class="bubble" data-id="3">
-        <img src="cap3.jpg" alt="Capitulo 3">
-        <h4>Capitulo 3</h4>
-     </div>
-
-     <div class="bubble" data-id="4">
-        <img src="cap4.jpg" alt="Capitulo 4">
-        <h4>Capitulo 5</h4>
-     </div>
-
-     <div class="bubble" data-id="5">
-        <img src="cap5.jpg" alt="Capitulo 5">
-        <h4>Capitulo 5</h4>
-     </div>
-
-</main>
-
-<!-- Modal para mostrar sinopsis -->
-<div id="modal">
-    <button id="close">X</button>
-    <div id="modal-content"></div>
+  <div id="container">
+    <div class="bubble" data-id="cap1" style="top: 50px; left: 50px;">
+      <strong>Capítulo 1</strong><br>
+      Introducción general<br>
+      <img src="img/oiowp.jpg" alt="Capítulo 1">
     </div>
 
-<!-- Aviso legal -->
-<footer>
-    @ 2025 Santiago Ramirez. Todos los derechos reservados. 
-    Este material es confidencial y no puede ser reproducido sin autorizacion del autor.
-</footer>
+    <div class="bubble" data-id="cap2" style="top: 200px; left: 200px;">
+      <strong>Capítulo 2</strong><br>
+      Conflicto inicial<br>
+      <img src="img/cap2.png" alt="Capítulo 2">
+    </div>
 
-<script src="script.js"></script>
-</body>
+    <div class="bubble" data-id="cap3" style="top: 400px; left: 80px;">
+      <strong>Capítulo 3</strong><br>
+      Clímax<br>
+      <img src="img/cap3.png" alt="Capítulo 3">
+    </div>
+  </div>
+
+  <div id="modal" class="hidden">
+  <div class="modal-content">
+    <span id="closeBtn">&times;</span>
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+    <iframe id="modal-pdf" width="100%" height="400px"></iframe>
+  </div>
+</div>
+
+  </body>
+
+  <footer>
+    © 2025 Santiago Ramírez. Todos los derechos reservados.  
+    Este material es confidencial y no puede ser reproducido sin autorización del autor.
+  </footer>
+
+  <script src="script.js"></script>
 </html>
